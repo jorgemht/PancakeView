@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             mc:Ignorable="d"
+             ios:Page.UseSafeArea="true"
+             x:Class="PancakeView.MainPage">
+
+    <StackLayout Margin="20,0" Spacing="20">
+        <yummy:PancakeView BackgroundColor="Red"
+                           CornerRadius="60,0,0,60" 
+                           IsClippedToBounds="true" 
+                           HorizontalOptions="FillAndExpand"
+                           HeightRequest="150">
+        </yummy:PancakeView>
+        <!--https://www.freeimages.com/-->
+
+        <yummy:PancakeView BackgroundColor="#bc91d7"
+                           HasShadow ="True"
+                           BackgroundGradientEndColor="Red"
+                           BackgroundGradientStartColor="Yellow"
+                           BackgroundGradientAngle="0"
+                           BorderIsDashed="True"
+                           Elevation="60"
+                           HorizontalOptions="FillAndExpand"
+                           HeightRequest="150">
+            <Image Source="image.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+        </yummy:PancakeView>
+
+        <yummy:PancakeView CornerRadius="40,0,0,40" 
+                           BorderGradientAngle="69"
+                           BorderGradientStartColor="Yellow"
+                           BorderGradientEndColor="Red"
+                           BorderThickness="4" 
+                           IsClippedToBounds="true" 
+                           BorderIsDashed="true"
+                           HorizontalOptions="FillAndExpand"
+                           HeightRequest="150">
+            <Image Source="image.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+        </yummy:PancakeView>
+        
+        <yummy:PancakeView BackgroundColor="Yellow" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="20" Elevation="4" Padding="20,0">
+            <Label Text="Using elevation" TextColor="Black" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" />
+        </yummy:PancakeView>
+
+        <yummy:PancakeView BackgroundColor="Yellow" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="20" Padding="20,0">
+            <Label Text="Do not using elevation" TextColor="DarkBlue" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" />
+        </yummy:PancakeView>
+
+    </StackLayout>
+
+</ContentPage>
+
+
